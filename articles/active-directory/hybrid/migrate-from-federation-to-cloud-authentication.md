@@ -71,6 +71,7 @@ Although this deployment changes no other relying parties in your AD FS farm, yo
     ```powershell
 
     (Get-AdfsRelyingPartyTrust -Name "Microsoft Office 365 Identity Platform") | Export-CliXML "C:\temp\O365-RelyingPartyTrust.xml"
+    (Get-AdfsRelyingPartyTrust -Name "Microsoft Office 365 Identity Platform Worldwide") | Export-CliXML "C:\temp\O365-RelyingPartyTrust.xml"
 
     ```
 
